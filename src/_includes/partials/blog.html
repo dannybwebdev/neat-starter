@@ -1,0 +1,18 @@
+<section class="mt-15 flex flex-wrap">
+    {% set postslist = collections.post %}
+
+    {% for post in postslist | reverse %}
+
+    <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="https://picsum.photos/200/300" alt="Shoes" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">{{ post.data.title }}</h2>
+            <p>{{ post.data.description }}</p>
+            <div class="card-actions justify-end">
+                <button href="{{ post.url | url }}" class="btn btn-primary">Read More!</button>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+</section>

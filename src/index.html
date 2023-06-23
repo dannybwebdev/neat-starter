@@ -1,22 +1,49 @@
 ---
 layout: default
-title: Neat Starter
+title: Anadvi
 path: home
 ---
+<section id="hero">
+  <div class="hero min-h-screen bg-base-200">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold">Get Advive, Give Advice, Anadvi!</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button class="btn btn-primary">Coming Soon!</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
-
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
-
-  {% include "./_includes/partials/content.html" %}
+<section id="benifits">
+  <div class="flex flex-row container mx-auto">
+  <div class="justify-center">
+    <h3>Get Advice</h3>
+    <p>We are building a platform that you can come to any time you need advice on any number of topics. Not many other
+      platforms provide good environments that are conducive to receiving good advice. Most people who turn to the
+      internet for advice often can’t receive the needed advice offline. Providing a platform will help them get the
+      advice that the are looking for and the help that they need.</p>
+  </div>
+  <div class="justify-center">
+  <h3>Give Advive</h3>
+  <p>Good advice comes from people who already have experience in dealing with the topics that are being asked about.
+    The internet is the perfect place to accumulate all of that experience and put it on a platform. Our goal is to
+    build that platform where people with experience can come and help others seeking advice.</p>
+  </div>
+  <div>
+  <h3>Anynomously</h3>
+  <p>We are pursuing an anonymous platform because we have notice that people are more forthcoming about the advice they
+    are looking for if their accounts are not associated with them personally. Sometimes people need advice on issues
+    that can be very embarrassing. Staying anonymous allows for the person asking for advice to provide more context,
+    which would allow them to get the help they need.</p>
+  </div>
 </div>
+</section>
+
+<section id="blog" class="container mx-auto">
+
+  <h2 class="text-5xl font-bold text-center">Blog</h2>
+
+  {% include "./_includes/partials/blog.html" %}
+
+</section>
